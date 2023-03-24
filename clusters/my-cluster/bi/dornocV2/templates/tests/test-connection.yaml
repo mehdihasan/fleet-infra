@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "dornocV2.fullname" . }}-test-connection"
+  labels:
+    {{- include "dornocV2.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "dornocV2.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
