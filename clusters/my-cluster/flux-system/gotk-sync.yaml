@@ -33,8 +33,7 @@ metadata:
   namespace: default
 spec:
   interval: 10m0s
-  path: ./clusters/my-cluster/bi/dornocV2
-  prune: true
+  chart: ./clusters/my-cluster/bi/dornocV2
   sourceRef:
     kind: GitRepository
     name: flux-system
