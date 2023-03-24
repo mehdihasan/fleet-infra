@@ -25,3 +25,16 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmChart
+metadata:
+  name: podinfo
+  namespace: default
+spec:
+  interval: 10m0s
+  path: ./clusters/my-cluster/bi/dornocV2
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
