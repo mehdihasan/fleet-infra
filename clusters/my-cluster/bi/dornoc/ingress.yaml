@@ -15,7 +15,7 @@ spec:
           service:
             name: dornoc-service-v1
             port:
-              number: 6000
+              number: 80
       # - path: "/v2"
       #   pathType: Prefix
       #   backend:
