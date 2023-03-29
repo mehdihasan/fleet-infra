@@ -32,7 +32,7 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  chart: ./clusters/dornocV2
+  chart: ./clusters/charts
   interval: 5m0s
   reconcileStrategy: Revision
   sourceRef:
