@@ -7,5 +7,5 @@ spec:
   releaseName: dornoc-demo
   chart:
     git: ssh://git@github.com/mehdihasan/fleet-infra
-    path: ./clusters/my-cluster/bi/dornocV2
+    path: ./clusters/dornocV2
     ref: dornoc-demo
