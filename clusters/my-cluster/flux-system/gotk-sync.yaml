@@ -34,7 +34,6 @@ metadata:
 spec:
   chart: ./clusters/dornocV2
   interval: 5m0s
-  chart: dornocV2
   reconcileStrategy: Revision
   sourceRef:
     kind: GitRepository
