@@ -1,0 +1,11 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: dornoc-demo
+  namespace: flux-system
+spec:
+  releaseName: dornoc-demo
+  chart:
+    git: ssh://git@github.com/mehdihasan/fleet-infra
+    path: ./clusters/my-cluster/bi/dornocV2
+    ref: dornoc-demo
