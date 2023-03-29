@@ -29,10 +29,10 @@ spec:
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmChart
 metadata:
-  name: flux-system
+  name: dornoc-v2
   namespace: flux-system
 spec:
-  chart: ./clusters/helm-charts
+  chart: ./clusters/helm-charts/dornoc-v2
   interval: 5m0s
   reconcileStrategy: Revision
   sourceRef:
