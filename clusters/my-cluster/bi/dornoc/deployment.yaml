@@ -28,7 +28,7 @@ spec:
             name: dornoc-config-v1
         - secretRef:
             name: dornoc-secret
-        image: docker.io/library/dornoc:1.1.1
+        image: docker.io/library/dornoc:1.1.2
         imagePullPolicy: IfNotPresent
         name: dornoc
         ports:
