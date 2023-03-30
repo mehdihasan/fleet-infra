@@ -26,19 +26,6 @@ spec:
     kind: GitRepository
     name: flux-system
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmChart
-metadata:
-  name: dornoc-v2
-  namespace: flux-system
-spec:
-  chart: ./clusters/helm-charts/dornoc-v2
-  interval: 5m0s
-  reconcileStrategy: Revision
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
