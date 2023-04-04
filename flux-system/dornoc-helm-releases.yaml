@@ -8,7 +8,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: ./clusters/my-cluster/helm-charts/dornoc-v3
+      chart: ./helm-charts/dornoc-v3
       reconcileStrategy: Revision
       sourceRef:
         kind: GitRepository
