@@ -16,6 +16,13 @@ spec:
             name: dornoc-service-{{ .Values.version }}
             port:
               number: 6000
+      - path: "/v4"
+        pathType: Prefix
+        backend:
+          service:
+            name: dornoc-service-v4
+            port:
+              number: 6000
       - path: "/v3"
         pathType: Prefix
         backend:
