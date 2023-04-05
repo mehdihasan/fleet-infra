@@ -19,6 +19,24 @@ spec:
     !/flux-system
     !/ddm
 ---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: helm-sources
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  secretRef:
+    name: helm-sources
+  url: ssh://git@github.com/mehdihasan/fleet-infra
+  ignore: |
+    # exclude all
+    /*
+    # include deploy dir
+    !/helm-charts
+---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
