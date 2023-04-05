@@ -12,14 +12,6 @@ spec:
   secretRef:
     name: flux-system
   url: ssh://git@github.com/mehdihasan/fleet-infra
-  ignore: |
-    # exclude all
-    /*
-    # include deploy dir
-    !/flux-system
-    !/ddm
-    !/resources
-    !/ggm
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
