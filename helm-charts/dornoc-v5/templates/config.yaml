@@ -6,7 +6,7 @@ metadata:
 data:
   BASE_URL: dornoc-{{ .Values.version }}.dfg.sdf.sdfg.com
   REMREM_URL: https://dfg-asd-asdfg-adfg.sdf.sdf.sdf
-  REDIS_URL: localhost
+  REDIS_URL: redis-server
   REDIS_PORT: "6379"
   REDIS_TOKEN_TTL: "7"
   ELASTIC_URL: "https://fcghdfh.dfh.dfgh.dfgh:3456"
