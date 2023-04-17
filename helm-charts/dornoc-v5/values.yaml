@@ -5,4 +5,4 @@ namespace: dornoc-test
 
 deploy:
   image: docker.io/library/dornoc
-  tag: 1.1.1
+  tag: 1.1.2
