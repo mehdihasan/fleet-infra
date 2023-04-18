@@ -9,9 +9,9 @@ data:
   REDIS_URL: redis-server
   REDIS_PORT: "6379"
   REDIS_TOKEN_TTL: "7"
-  ELASTIC_URL: "https://fcghdfh.dfh.dfgh.dfgh:3456"
-  COLLECTIONS_INDEX_BASE: fgfdg-dxfgx-xdfg-xdfg-xdfg
-  MEASUREMENT_INDEX_BASE: dfx-xdfg-zdfg-zdfg-zdfg
+  ELASTIC_URL: "http://10.92.81.18:9200"
+  COLLECTIONS_INDEX_BASE: raw
+  MEASUREMENT_INDEX_BASE: measurement
   VAULT_URL: https://cgh.cfj.cghj.chj
   VAULT_PATH: cfghj-cghj/cghj/cghj/cghj/{{ .Values.namespace }}/
   API_VERSION: {{ .Values.version }}
